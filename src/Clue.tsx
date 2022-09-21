@@ -13,10 +13,9 @@ interface ClueWrapperProps {
 }
 
 const ClueWrapper = styled.div.attrs<ClueWrapperProps>((props) => ({
-  className: `clue${
-    props.complete ? (props.correct ? ' correct' : ' incorrect') : ''
-  }`,
-}))<ClueWrapperProps>`
+  className: `clue${props.complete ? (props.correct ? ' correct' : ' incorrect') : ''
+    }`,
+})) <ClueWrapperProps>`
   cursor: default;
   background-color: ${(props) =>
     props.highlight ? props.highlightBackground : 'transparent'};
@@ -65,8 +64,8 @@ export default function Clue({
       onClick={handleClick}
       aria-label={`clue-${number}-${direction}`}
     >
-      {number}: {children}
-    </ClueWrapper>
+      <div style={{ font- weight: 'bold' }}>{number}</div> { children }
+    </ClueWrapper >
   );
 }
 
