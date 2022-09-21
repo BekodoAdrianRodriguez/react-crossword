@@ -1,5 +1,5 @@
 {
-  "name": "@bekodo/react-crossword",
+  "name": "@jaredreisinger/react-crossword",
   "homepage": "https://react-crossword.jaredreisinger.com",
   "version": "4.3.2",
   "description": "A flexible, responsive, and easy-to-use crossword component for React apps",
@@ -131,5 +131,6 @@
   "directories": {
     "doc": "docs",
     "example": "example"
-  }
+  },
+  "types": "./dist/index.d.ts"
 }
