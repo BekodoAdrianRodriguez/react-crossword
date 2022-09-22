@@ -61,7 +61,7 @@ function Clue(_a) {
         event.preventDefault();
         handleClueSelected(direction, number);
     }, [direction, number, handleClueSelected]);
-    return ((0, jsx_runtime_1.jsx)(ClueWrapper, Object.assign({ highlightBackground: highlightBackground, highlight: focused && direction === selectedDirection && number === selectedNumber, complete: complete, correct: correct }, props, { onClick: handleClick, "aria-label": `clue-${number}-${direction}` }, { children: (0, jsx_runtime_1.jsxs)("div", Object.assign({ className: 'flex' }, { children: [(0, jsx_runtime_1.jsx)("div", Object.assign({ className: "font-bold" }, { children: number })), " ", children] })) })));
+    return ((0, jsx_runtime_1.jsx)(ClueWrapper, Object.assign({ highlightBackground: highlightBackground, highlight: focused && direction === selectedDirection && number === selectedNumber, complete: complete, correct: correct }, props, { onClick: handleClick, "aria-label": `clue-${number}-${direction}` }, { children: (0, jsx_runtime_1.jsxs)("div", Object.assign({ className: 'flex' }, { children: [(0, jsx_runtime_1.jsx)("div", Object.assign({ className: "clue_number" }, { children: number })), " ", children] })) })));
 }
 exports.default = Clue;
 Clue.propTypes = {

@@ -64,7 +64,7 @@ export default function Clue({
       onClick={handleClick}
       aria-label={`clue-${number}-${direction}`}
     >
-      <div className='flex'><div className="font-bold">{number}</div> {children}</div>
+      <div className='flex'><div className="clue_number">{number}</div> {children}</div>
     </ClueWrapper >
   );
 }
