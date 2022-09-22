@@ -45,7 +45,6 @@ const context_1 = require("./context");
 const ClueWrapper = styled_components_1.default.div.attrs((props) => ({
     className: `clue${props.complete ? (props.correct ? ' correct' : ' incorrect') : ''}`,
 })) `
-  font-weight: bold;
   cursor: default;
   background-color: ${(props) => props.highlight ? props.highlightBackground : 'transparent'};
 `;
@@ -62,7 +61,7 @@ function Clue(_a) {
         event.preventDefault();
         handleClueSelected(direction, number);
     }, [direction, number, handleClueSelected]);
-    return ((0, jsx_runtime_1.jsxs)(ClueWrapper, Object.assign({ highlightBackground: highlightBackground, highlight: focused && direction === selectedDirection && number === selectedNumber, complete: complete, correct: correct }, props, { onClick: handleClick, "aria-label": `clue-${number}-${direction}` }, { children: [(0, jsx_runtime_1.jsx)("div", { children: number }), " ", children] })));
+    return ((0, jsx_runtime_1.jsxs)(ClueWrapper, Object.assign({ highlightBackground: highlightBackground, highlight: focused && direction === selectedDirection && number === selectedNumber, complete: complete, correct: correct }, props, { onClick: handleClick, "aria-label": `clue-${number}-${direction}` }, { children: [(0, jsx_runtime_1.jsx)("div", Object.assign({ className: "bold" }, { children: number })), " ", children] })));
 }
 exports.default = Clue;
 Clue.propTypes = {
